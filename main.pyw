@@ -6,9 +6,9 @@ REL_DATE: str = '20/12/2025'
 AUTHOR: str = 'Damion James Edwards'
 EMAIL: str = 'damion@bluegf.com'
 COPYRIGHT: str = AUTHOR + ' & ' + 'BlueGF'
-CHANGLEOG: str = '''
-0.0.1   DJE     30/11/2025  Initial commit
-0.0.2   DJE     xx/xx/2026  .
+CHANGELOG: str = '''
+0.0.1   DJE     30/12/2025  Initial commit
+0.0.2   DJE     30/12/2026  Open pyside6 window
 0.0.3   DJE     xx/xx/2026  .
 '''
 
@@ -26,8 +26,18 @@ To view or edit your customer shortcuts in the future, select "Custom Shortcuts"
 
 import sys
 
+from PySide6.QtWidgets import QApplication, QWidget
+
 
 if __name__ == '__main__':
-    print('x')
+
+    app = QApplication([])
+    window = QWidget()
+    window.show()
+
+    app.exec()  # Start the event loop.
+
+    # Your application won't reach here until you exit and the event
+    # loop has stopped.
 else:
     sys.exit('This is not a module, it should be run directly and not imported')
