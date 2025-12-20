@@ -3,9 +3,11 @@
 ## Program to run when the Copilot key is pressed.
 
 ### CHANGELOG:
-0.0.1   DJE     30/12/2025  Initial commit
+0.0.1   DJE     30/12/2025  Initial commit<br />
 0.0.2   DJE     30/12/2026  Open pyside6 window
 0.0.3   DJE     xx/xx/2026  .
+
+### Description:
 
 This program will need to be linked to the Copilot (or another) key.
 On Linux Mint 22.2 Cinnamon:
