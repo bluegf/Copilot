@@ -9,7 +9,7 @@ COPYRIGHT: str = AUTHOR + ' & ' + 'BlueGF'
 CHANGELOG: str = '''
 0.0.1   DJE     30/12/2025  Initial commit
 0.0.2   DJE     30/12/2026  Open pyside6 window
-0.0.3   DJE     xx/xx/2026  .
+0.0.3   DJE     30/12/2026  Add text message to window, centre horizontally & vertically.
 '''
 
 '''
@@ -25,6 +25,8 @@ To view or edit your customer shortcuts in the future, select "Custom Shortcuts"
 
 TODO:
 * How to package up the venv to be distributed / used elsewhere / bound to a key?
+* Open the window in the centre of the screen
+* Add an icon for the app?
 
 '''
 
