@@ -22,6 +22,10 @@ On Linux Mint 22.2 Cinnamon:
     5. Enter this command to run this program: "python main.pyw ??? TODO
     Note: I entered "gnome-system-monitor" to run System Monitor (command found in Properties for the start menu entry)
 To view or edit your customer shortcuts in the future, select "Custom Shortcuts" on the left hand side of the "Keyboard" application
+
+TODO:
+* How to package up the venv to be distributed / used elsewhere / bound to a key?
+
 '''
 
 import sys
