@@ -12,7 +12,10 @@ CHANGELOG: str = '''
 0.0.3   DJE     20/12/2025  Add text message to window, centre horizontally & vertically.
 1.0.0   DJE     21/12/2025  First RC
 PLANNED:
-1.0.1   DJE     ??/12/2025  Fixed dates in changelog that have incorrect year
+1.0.1   DJE     21/12/2025  Fixed dates in changelog that have incorrect year
+1.0.2   DJE     21/12/2025  Add "planned" versions
+1.1.0   DJE     ??/12/2025  Make window open in centre of the screen
+1.1.1   DJE     ??/12/2025  Complete notes explaining how to open this program from the Copilot key
 '''
 
 '''
