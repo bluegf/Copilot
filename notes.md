@@ -13,4 +13,4 @@
     Available platform plugins are: minimal, offscreen, linuxfb, wayland-brcm, wayland-egl, wayland, vkkhrdisplay, xcb, eglfs, vnc, minimalegl.<br />
     <br />
     Aborted (core dumped)<br />
-* Execute this command ina Linux Terminal (not the venv/VSC Terminal): sudo apt-get install libxcb-cursor0
+* FIX: Execute this command ina Linux Terminal (not the venv/VSC Terminal): sudo apt-get install libxcb-cursor0
