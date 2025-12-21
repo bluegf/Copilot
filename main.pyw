@@ -9,13 +9,12 @@ COPYRIGHT: str = AUTHOR + ' & ' + 'BlueGF'
 CHANGELOG: str = '''
 0.0.1   DJE     20/12/2025  Initial commit
 0.0.2   DJE     20/12/2025  Open pyside6 window
-0.0.3   DJE     20/12/2025  Add text message to window, centre horizontally & vertically.
+0.0.3   DJE     20/12/2025  Add text message to window, centre horizontally & vertically
 1.0.0   DJE     21/12/2025  First RC
 1.0.1   DJE     21/12/2025  Fixed dates in changelog that have incorrect year
 1.0.2   DJE     21/12/2025  Add "planned" versions
 1.1.0   DJE     21/12/2025  Make window open in centre of the screen
 1.1.1   DJE     21/12/2025  Complete notes explaining how to open this program when the Copilot key is pressed
-PLANNED:
 '''
 
 '''
@@ -37,9 +36,7 @@ On Linux Mint 22.2 Cinnamon:
 To view or edit your customer shortcuts in the future, select "Custom Shortcuts" on the left hand side of the "Keyboard" application
 
 TODO:
-* How to package up the venv to be distributed / used elsewhere / bound to a key?
-* Open the window in the centre of the screen
-* Add an icon for the app?
+* Nothing planned
 
 '''
 
