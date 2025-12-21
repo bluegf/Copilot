@@ -11,10 +11,10 @@ CHANGELOG: str = '''
 0.0.2   DJE     20/12/2025  Open pyside6 window
 0.0.3   DJE     20/12/2025  Add text message to window, centre horizontally & vertically.
 1.0.0   DJE     21/12/2025  First RC
-PLANNED:
 1.0.1   DJE     21/12/2025  Fixed dates in changelog that have incorrect year
 1.0.2   DJE     21/12/2025  Add "planned" versions
-1.1.0   DJE     ??/12/2025  Make window open in centre of the screen
+1.1.0   DJE     21/12/2025  Make window open in centre of the screen
+PLANNED:
 1.1.1   DJE     ??/12/2025  Complete notes explaining how to open this program from the Copilot key
 '''
 
@@ -53,15 +53,13 @@ else:
 import sys
 
 from PySide6.QtCore import QSize, Qt
-from PySide6.QtGui import QIcon  #, QPalette, QColor
+from PySide6.QtGui import QIcon, QScreen  #, QPalette, QColor
 from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QPushButton, QWidget
 
 
 class MainWidget(QWidget):
     def __init__(self):
         super().__init__()
-        #self.setMaximumSize
-        #self.setStyleSheet('border:1px solid blue')
 
         label = QLabel('No.')
         font = label.font()
@@ -72,7 +70,7 @@ class MainWidget(QWidget):
         button.clicked.connect(app.quit)
 
         layout = QVBoxLayout(self)
-        layout.addWidget(label, alignment=Qt.AlignmentFlag.AlignHCenter)
+        layout.addWidget(label, alignment=Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(button, alignment=Qt.AlignmentFlag.AlignCenter)
         self.setLayout(layout)
 
@@ -80,21 +78,29 @@ class MainWidget(QWidget):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle('Copilot Button')
-        self.setFixedSize(QSize(220, 100))
 
         icon = QIcon('bluegf.ico')
         self.setWindowIcon(icon)
+        self.setWindowTitle('Copilot button')
+        self.setFixedSize(QSize(250, 100))
 
-        # Set the central widget of the Window.
-        main_widget = MainWidget()
-        self.setCentralWidget(main_widget)
+        self.setCentralWidget(MainWidget())
 
 
 if __name__ == '__main__':
+
     app = QApplication([])
     window = MainWindow()
+
+    # Place the window in the centre of the primary monitor:
+    center = QScreen.availableGeometry(QApplication.primaryScreen()).center()
+    geometry = window.frameGeometry()
+    geometry.moveCenter(center)
+    window.move(geometry.topLeft())
+
     window.show()
-    sys.exit(app.exec())  # Start the event loop.
+
+    sys.exit(app.exec())  # Start the event loop
+
 else:
     sys.exit('This is not a module, it should be run directly and not imported')
