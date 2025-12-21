@@ -1,0 +1,28 @@
+# https://github.com/github/gitignore/blob/main/Python.gitignore#L130
+# https://www.w3schools.com/git/git_ignore.asp
+# Can put additional .gitignore files in multiple directories
+# Lines must START with a # to be a comment
+
+# Virtual environment files:
+.venv
+
+# Python bytecode & cache files:  (https://docs.python-guide.org/writing/gotchas/#version-control-ignores)
+*.py[cod]
+__pycache__/
+
+# EXE creating files & directories (except the EXE itself? depends on whether I wish to distribute the binary or not)
+
+
+# User specific files:
+#/data/settings.cfg
+#/data/saves/*
+# /data/data_player/
+# !/data/data_player/.gitignore
+
+# Files used in creation that I don't want published (e.g. SVG files):
+# /raw_assets/
+
+# Unused files (temp, testing, examples in "unused"):
+# /unused/
+# /mainOLD.py
+# /notes.md
