@@ -19,7 +19,7 @@ PLANNED:
 '''
 
 '''
-This program will need to be linked to the Copilot (or another) key.
+This program is designed to be linked to a key such as the Copilot key.
 On Linux Mint 22.2 Cinnamon:
     1. Start Menu > Peferences > Keyboard
     2. In the Keyboard app, select the "Shortcuts" pane
@@ -29,7 +29,7 @@ On Linux Mint 22.2 Cinnamon:
     6. "Custom Shortcuts" in the left hand menu should now be selected, if not then select it
     7. At the bottom right, in the "Keyboard bindings" pane, click on the top "unassigned"
     8. Click on "unassigned" again so it changes to "Pick an accelerator"
-    9. Press the Copilot key (or whatever ey you want)
+    9. Press the Copilot key (or whatever key you want)
     10. It should now read "Shift+Super+TouchpadOff"
     11. Now, if you press the Copilot key, the program will open
     Note: I entered "gnome-system-monitor" to run System Monitor (command found in Properties for the start menu entry)
