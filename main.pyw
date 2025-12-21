@@ -7,9 +7,10 @@ AUTHOR: str = 'Damion James Edwards'
 EMAIL: str = 'damion@bluegf.com'
 COPYRIGHT: str = AUTHOR + ' & ' + 'BlueGF'
 CHANGELOG: str = '''
-0.0.1   DJE     30/12/2025  Initial commit
-0.0.2   DJE     30/12/2026  Open pyside6 window
-0.0.3   DJE     30/12/2026  Add text message to window, centre horizontally & vertically.
+0.0.1   DJE     20/12/2025  Initial commit
+0.0.2   DJE     20/12/2026  Open pyside6 window
+0.0.3   DJE     20/12/2026  Add text message to window, centre horizontally & vertically.
+1.0.0   DJE     21/12/2026  First RC
 '''
 
 '''
@@ -36,31 +37,53 @@ TODO:
 
 '''
 
+try:  # Shows my icon in Windows Explorer & Taskbar:
+    from ctypes import windll  # Only exists on Windows hence using try/except
+except ImportError:  # When not on windows - how will this work with generating executable with PyInstaller or similar?
+    pass
+else:
+    myappid: str = 'com.bluegf.copilot'
+    windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+
 import sys
 
 from PySide6.QtCore import QSize, Qt
+from PySide6.QtGui import QIcon  #, QPalette, QColor
 from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QPushButton, QWidget
+
+
+class MainWidget(QWidget):
+    def __init__(self):
+        super().__init__()
+        #self.setMaximumSize
+        #self.setStyleSheet('border:1px solid blue')
+
+        label = QLabel('No.')
+        font = label.font()
+        font.setBold(True)
+        label.setFont(font)
+
+        button = QPushButton('OK')
+        button.clicked.connect(app.quit)
+
+        layout = QVBoxLayout(self)
+        layout.addWidget(label, alignment=Qt.AlignmentFlag.AlignHCenter)
+        layout.addWidget(button, alignment=Qt.AlignmentFlag.AlignCenter)
+        self.setLayout(layout)
 
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Copilot Button')
-        self.setFixedSize(QSize(300, 200))
+        self.setFixedSize(QSize(220, 100))
 
-        label = QLabel('No.')
-
-        button = QPushButton('OK!', self)
-        button.setFixedSize(QSize(100, 40))
-        button.clicked.connect(app.quit)
-
-        #main_widget = QWidget()
-        layout = QVBoxLayout(self)
-        layout.addWidget(label)
-        layout.addWidget(button)
+        icon = QIcon('bluegf.ico')
+        self.setWindowIcon(icon)
 
         # Set the central widget of the Window.
-        self.setCentralWidget(layout)
+        main_widget = MainWidget()
+        self.setCentralWidget(main_widget)
 
 
 if __name__ == '__main__':
