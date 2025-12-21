@@ -20,6 +20,12 @@ On Linux Mint 22.2 Cinnamon:
     3. Click the "Add custom shortcut" button
     4. In the dialog box that opens, put a humsn readable "Name" in the 1st box
     5. Enter this command to run this program: "python main.pyw ??? TODO
+    6. "Custom Shortcuts" in the left hand menu should now be selected, if not then select it
+    7. At the bottom right, in the "Keyboard bindings" pane, click on the top "unassigned"
+    8. Click on "unassigned" again so it changes to "Pick an accelerator"
+    9. Press the Copilot key (or whatever ey you want)
+    10. It should now read "Shift+Super+TouchpadOff"
+    11. Now, if you press the Copilot key, the program will open
     Note: I entered "gnome-system-monitor" to run System Monitor (command found in Properties for the start menu entry)
 To view or edit your customer shortcuts in the future, select "Custom Shortcuts" on the left hand side of the "Keyboard" application
 
@@ -32,18 +38,35 @@ TODO:
 
 import sys
 
-from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtCore import QSize, Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QPushButton, QWidget
+
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle('Copilot Button')
+        self.setFixedSize(QSize(300, 200))
+
+        label = QLabel('No.')
+
+        button = QPushButton('OK!', self)
+        button.setFixedSize(QSize(100, 40))
+        button.clicked.connect(app.quit)
+
+        #main_widget = QWidget()
+        layout = QVBoxLayout(self)
+        layout.addWidget(label)
+        layout.addWidget(button)
+
+        # Set the central widget of the Window.
+        self.setCentralWidget(layout)
 
 
 if __name__ == '__main__':
-
     app = QApplication([])
-    window = QWidget()
+    window = MainWindow()
     window.show()
-
-    app.exec()  # Start the event loop.
-
-    # Your application won't reach here until you exit and the event
-    # loop has stopped.
+    sys.exit(app.exec())  # Start the event loop.
 else:
     sys.exit('This is not a module, it should be run directly and not imported')
