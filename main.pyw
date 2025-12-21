@@ -14,8 +14,8 @@ CHANGELOG: str = '''
 1.0.1   DJE     21/12/2025  Fixed dates in changelog that have incorrect year
 1.0.2   DJE     21/12/2025  Add "planned" versions
 1.1.0   DJE     21/12/2025  Make window open in centre of the screen
+1.1.1   DJE     21/12/2025  Complete notes explaining how to open this program when the Copilot key is pressed
 PLANNED:
-1.1.1   DJE     ??/12/2025  Complete notes explaining how to open this program from the Copilot key
 '''
 
 '''
@@ -25,7 +25,8 @@ On Linux Mint 22.2 Cinnamon:
     2. In the Keyboard app, select the "Shortcuts" pane
     3. Click the "Add custom shortcut" button
     4. In the dialog box that opens, put a humsn readable "Name" in the 1st box
-    5. Enter this command to run this program: "python main.pyw ??? TODO
+    5. Enter this command to run this program: "/home/bluegf/Programming/GitHub/Python/Copilot/.venv/bin/python /home/bluegf/Programming/GitHub/Python/Copilot/main.pyw"
+        (note: this is the command that appears in the Terminal window in VSC when you click the "Run Python File" icon)
     6. "Custom Shortcuts" in the left hand menu should now be selected, if not then select it
     7. At the bottom right, in the "Keyboard bindings" pane, click on the top "unassigned"
     8. Click on "unassigned" again so it changes to "Pick an accelerator"
