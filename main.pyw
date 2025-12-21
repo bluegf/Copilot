@@ -8,9 +8,11 @@ EMAIL: str = 'damion@bluegf.com'
 COPYRIGHT: str = AUTHOR + ' & ' + 'BlueGF'
 CHANGELOG: str = '''
 0.0.1   DJE     20/12/2025  Initial commit
-0.0.2   DJE     20/12/2026  Open pyside6 window
-0.0.3   DJE     20/12/2026  Add text message to window, centre horizontally & vertically.
-1.0.0   DJE     21/12/2026  First RC
+0.0.2   DJE     20/12/2025  Open pyside6 window
+0.0.3   DJE     20/12/2025  Add text message to window, centre horizontally & vertically.
+1.0.0   DJE     21/12/2025  First RC
+PLANNED:
+1.0.1   DJE     ??/12/2025  Fixed dates in changelog that have incorrect year
 '''
 
 '''
