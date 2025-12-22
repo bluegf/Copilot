@@ -37,7 +37,6 @@ To view or edit your customer shortcuts in the future, select "Custom Shortcuts"
 
 TODO:
 * Nothing planned
-
 '''
 
 try:  # Shows my icon in Windows Explorer & Taskbar:
