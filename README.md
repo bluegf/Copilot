@@ -17,7 +17,7 @@ It also sets an icon and centres the window on the primary monitor.
 ## TODO:
 * Bind to a key on a Windows platform to test it works on Windows
 
-## Description:
+## How To Bind A Program To A Key (Linux Mint 22.2 Cinnamon):
 
 This program is designed to be linked to a key such as the Copilot key.<br />
 On Linux Mint 22.2 Cinnamon:<br />
