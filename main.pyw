@@ -15,6 +15,7 @@ CHANGELOG: str = '''
 1.0.2   DJE     21/12/2025  Add "planned" versions
 1.1.0   DJE     21/12/2025  Make window open in centre of the screen
 1.1.1   DJE     21/12/2025  Complete notes explaining how to open this program when the Copilot key is pressed
+1.2.1   DJE     ??/01/2026  IN PROGRESS: Add auto backing up of DCIM / Whatsapp image files & windows when phone is plugged in
 '''
 
 '''
@@ -84,6 +85,17 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(MainWidget())
 
 
+def get_files():
+    ''' If a phone is connected then get photos and videos from DCIM & Whatsapp. '''
+    # https://stackoverflow.com/questions/66191687/check-phone-directory-phone-to-linux-connection
+    # plug phone in to see mount point: /mnt or /media ?
+    # if a_phone_is_plugged_in:
+    #     copy files from DCIM (recurse over dirs?)
+    #     copy files from whatsapp folders
+    #     zip files?
+    ...
+
+
 if __name__ == '__main__':
 
     app = QApplication([])
@@ -96,6 +108,8 @@ if __name__ == '__main__':
     window.move(geometry.topLeft())
 
     window.show()
+
+    #get_files()
 
     sys.exit(app.exec())  # Start the event loop
 
