@@ -38,6 +38,9 @@ To view or edit your customer shortcuts in the future, select "Custom Shortcuts"
 
 TODO:
 * Nothing planned
+Auto copy files from phone. Plugged in and it mounted here:
+/run/user/1000/gvfs/mtp:host=Xiaomi_POCO_X4_Pro_5G_52f49a200e55/Internal shared storage$
+need to research auto mounting in Linux
 '''
 
 try:  # Shows my icon in Windows Explorer & Taskbar:
