@@ -40,6 +40,8 @@ TODO:
 * Nothing planned
 Auto copy files from phone. Plugged in and it mounted here:
 /run/user/1000/gvfs/mtp:host=Xiaomi_POCO_X4_Pro_5G_52f49a200e55/Internal shared storage$
+PTP gave: /run/user/1000/gvfs/gphoto2:host=Xiaomi_POCO_X4_Pro_5G_52f49a200e55/DCIM
+Can configure linux to auto copy files to pix...maybe this is a workaround?
 need to research auto mounting in Linux
 '''
 
