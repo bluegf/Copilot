@@ -84,7 +84,8 @@ class MainWindow(QMainWindow):
 
         icon = QIcon('bluegf.ico')
         self.setWindowIcon(icon)
-        self.setWindowTitle('Copilot button')
+        # self.setWindowTitle('Copilot button')
+        self.setWindowTitle(' ')
         self.setFixedSize(QSize(250, 100))
 
         self.setCentralWidget(MainWidget())
@@ -114,7 +115,7 @@ if __name__ == '__main__':
 
     window.show()
 
-    #get_files()
+    # get_files()
 
     sys.exit(app.exec())  # Start the event loop
 
