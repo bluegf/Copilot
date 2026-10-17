@@ -3,7 +3,6 @@
 '''
 TODO Icon not working, convert from png to ico
 TODO test on windows
-TODO clean up for publishing then publish on github, post to reddit
 '''
 
 '''
