@@ -13,7 +13,7 @@ On Linux Mint 22.2 Cinnamon:<br />
     2. In the Keyboard app, select the "Shortcuts" pane<br />
     3. Click the "Add custom shortcut" button<br />
     4. In the dialog box that opens, put a human readable "Name" in the 1st box. E.g. Copilot<br />
-    5. Enter this command to run this program: "$HOME/Programming/GitHub/Python/Copilot/.venv/bin/python $HOME/Programming/GitHub/Python/Copilot/src/main.pyw"<br />
+    5. Enter this command to run this program: "$HOME/path/to/your/python/.venv/bin/python $HOME/path/to/where/you/saved/main.pyw"<br />
         (note: this is the command that appears in the Terminal window in VSC when you click the "Run Python File" icon)<br />
     6. "Custom Shortcuts" in the left hand menu should now be selected, if not then select it<br />
     7. At the bottom right, in the "Keyboard bindings" pane, click on the top "unassigned"<br />
