@@ -1,13 +1,11 @@
 ''' Program to run when the Copilot key is pressed. '''
 
 '''
+Copyright (c)2026 Damion James Edwards & BlueGF.
+See LICENCE.txt for details (MIT No Attribution).
+
 TODO Icon not working, convert from png to ico
 TODO test on windows
-'''
-
-'''
-Copyright (c)2025 Damion James Edwards & BlueGF.
-See LICENCE.txt for details.
 '''
 
 try:  # Shows my icon in Windows Explorer & Taskbar:
@@ -15,7 +13,7 @@ try:  # Shows my icon in Windows Explorer & Taskbar:
 except ImportError:  # When not on windows - how will this work with generating executable with PyInstaller or similar?
     pass
 else:
-    myappid: str = 'com.bluegf.copilot'
+    myappid = 'com.bluegf.copilot'
     windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
 import sys

@@ -4,6 +4,10 @@
 
 Program to run when the Copilot key is pressed. Tested on a Linux platform but it should also work on Windows or Mac. It also sets an icon and centres the window on the primary monitor.
 
+## Licence
+
+* MIT-0 (MIT No Attribution License)
+
 ## Requirements
 
 * Python 3.xx
@@ -12,6 +16,7 @@ Program to run when the Copilot key is pressed. Tested on a Linux platform but i
 ## TODO
 
 * Bind to a key on a Windows platform to test it works on Windows
+* Icon not working, try converting from png to ico
 
 ## How To Bind A Program To A Key (Linux Mint 22.2 Cinnamon)
 
